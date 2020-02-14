@@ -55,7 +55,7 @@ class Shard extends EventEmitter {
     this.env = Object.assign({}, process.env, {
       SHARDING_MANAGER: true,
       SHARDS: this.id,
-      TOTAL_SHARD_COUNT: this.manager.totalShards,
+      SHARD_COUNT: this.manager.totalShards,
       DISCORD_TOKEN: this.manager.token,
     });
 
@@ -319,7 +319,7 @@ class Shard extends EventEmitter {
     }
 
     /**
-     * Emitted upon recieving a message from the child process/worker.
+     * Emitted upon receiving a message from the child process/worker.
      * @event Shard#message
      * @param {*} message Message that was received
      */

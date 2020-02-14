@@ -71,6 +71,7 @@ const Messages = {
   SPLIT_MAX_LEN: 'Chunk exceeds the max length and contains no split characters.',
 
   BAN_RESOLVE_ID: (ban = false) => `Couldn't resolve the user ID to ${ban ? 'ban' : 'unban'}.`,
+  FETCH_BAN_RESOLVE_ID: 'Couldn\'t resolve the user ID to fetch the ban.',
 
   PRUNE_DAYS_TYPE: 'Days must be a number',
 
@@ -79,6 +80,7 @@ const Messages = {
   GUILD_CHANNEL_ORPHAN: 'Could not find a parent to this guild channel.',
   GUILD_OWNED: 'Guild is owned by the client.',
   GUILD_MEMBERS_TIMEOUT: 'Members didn\'t arrive in time.',
+  GUILD_UNCACHED_ME: 'The client user as a member of this guild is uncached.',
 
   INVALID_TYPE: (name, expected, an = false) => `Supplied ${name} is not a${an ? 'n' : ''} ${expected}.`,
 
